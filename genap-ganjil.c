@@ -1,10 +1,12 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main()
 {
-    int size[] = {};
+    
     int data;
     scanf("%d", &data);
+
+    int *size = malloc(data);
     for(int i=0; i<data; i++)
     {
         int cek = 0;
